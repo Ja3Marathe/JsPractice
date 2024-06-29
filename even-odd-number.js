@@ -1,33 +1,56 @@
-const array = [23, 12, 34, 122, 5, 87];
-const even = []
-const odd = []
+// const array = [23, 12, 34, 122, 5, 87];
+// const even = []
+// const odd = []
 
-// for (let i = 0; i < array.length; i++) {
-//     if (array[i] % 2 === 0) {
-//         even.push(array[i])
+// // for (let i = 0; i < array.length; i++) {
+// //     if (array[i] % 2 === 0) {
+// //         even.push(array[i])
+// //     }
+// //     else {
+// //         odd.push(array[i])
+// //     }
+// // }
+
+
+// let i = 0
+// let j = array.length - 1
+
+// const checkIfEven = (number) => {
+
+//     if (number % 2 === 0) {
+//         even.push(number);
 //     }
 //     else {
-//         odd.push(array[i])
+//         odd.push(number);
 //     }
 // }
 
+// while (i < j) {
+//     checkIfEven(array[i]);
+//     checkIfEven(array[j]);
+//     i++;
+//     j--;
+// }
+// console.log(even);
+// console.log(odd);
 
-let i = 0
-let j = array.length - 1
+const array = [23, 12, 34, 122, 5, 87];
+const odd = [];
+const even = [];
 
-const checkIfEven = (number) => {
-
-    if (number % 2 === 0) {
-        even.push(number);
+const checkIfEven = (num) => {
+    if (num % 2 == 0) {
+        even.push(num);
     }
     else {
-        odd.push(number);
+        odd.push(num);
     }
 }
-
+let i = 0;
+let j = array.length - 1;
 while (i < j) {
-    checkIfEven(array[i]);
-    checkIfEven(array[j]);
+    checkIfEven(i);
+    checkIfEven(j);
     i++;
     j--;
 }
